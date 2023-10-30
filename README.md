@@ -21,10 +21,12 @@ To deploy the jar, run the following command:
 The application will be up at `http://localhost:8080`
 
 #### Application screenshots
-*Organization List:
+###### Organization List:
+![image](https://github.com/chandraprakash-miryala/iCodeTest-Assignment/assets/40048528/9b7ac35d-0929-485f-8730-2f6b50ea7b7e)
 
-*Create Organization Template:
+###### Create Organization Template:
+![image](https://github.com/chandraprakash-miryala/iCodeTest-Assignment/assets/40048528/2f9bc71b-5461-4d87-a704-79fbe6cad80e)
 
-*Organization Details after uploading template data:
-
+###### Organization Details after uploading template data:
+![image](https://github.com/chandraprakash-miryala/iCodeTest-Assignment/assets/40048528/2882aed4-be53-4f6b-aa3c-df3288dd9b0e)
 
