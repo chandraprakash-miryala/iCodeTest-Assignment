@@ -1,0 +1,43 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.field-loading {
+    width: 25%;
+}
+
+.data-loading {
+    width: 15%;
+}
+
+.button-container {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+
+.org-name {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 20px 0px;
+    padding: 10px 0 20px 0;
+}
+
+h3 {
+    display: flex;
+}
+
+.row {
+    overflow-x: auto;
+}

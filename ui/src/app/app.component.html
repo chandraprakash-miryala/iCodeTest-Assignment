@@ -1,0 +1,4 @@
+<app-navbar (onCreateOrg)="addOrg()" ></app-navbar>
+<app-org-list *ngIf="orgList" (showOrgDetails)="showOrgDetails($event)"></app-org-list>
+<app-create-org (showOrgList)="showOrgList()" *ngIf="createOrg"></app-create-org>
+<app-org-details *ngIf="orgDetails" [orgId]="selectedOrgId" [orgName]="selectedOrgName"></app-org-details>

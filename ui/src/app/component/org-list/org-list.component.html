@@ -1,0 +1,26 @@
+<div class="container">
+	<div *ngIf="isLoading">
+		<img class="center" src="../../../assets/loadingDots.gif" alt="Loading..." />
+	</div>
+	<div *ngIf="!isLoading" class="row">
+		<div class="col-md-12">
+			 <table class="table table-bordered table-hover">
+				 <thead>
+					 <tr>
+						<th>Name</th>
+						<th>Action</th>
+					 </tr>
+				 </thead>
+				 <tbody>
+					<tr *ngFor="let org of organizations;">
+						<td>{{ org.name }}</td>
+						<td>
+							<button class="btn btn-sm btn-primary" (click)="showDetails(org)">Details</button>
+							<button class="btn btn-sm btn-danger" (click)="delete(org)" style="margin-left: 10px;"><i class="bi bi-trash"></i></button>
+						</td>
+					</tr>
+				 </tbody>
+			 </table>
+		</div>
+	</div>
+</div>
