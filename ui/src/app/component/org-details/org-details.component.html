@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="container org-name">
+        <h3>{{ orgName }}</h3>
+    </div>
+    <div class="button-container">
+        <button class="button btn btn-primary" (click)="onTemplateDownload()">Download Template</button>
+        <button class="button btn btn-primary" (click)="fileInput.click()">Upload Template</button>
+        <input #fileInput type="file" (change)="onFileUpload($event)" accept = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" style="display:none"/>
+    </div>
+	<div *ngIf="isFieldsLoading">
+		<img class="center field-loading" src="../../../assets/loadingDots.gif" alt="Loading..." />
+	</div>
+	<div *ngIf="!isFieldsLoading" class="row">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+				    <th *ngFor="let fieldName of fieldsNamesList;">{{fieldName}}</th>
+				</tr>
+			</thead>
+			<tbody>
+                <td [attr.colspan]="4" style="border-width:thin" *ngIf="isDataLoading">
+                    <img class="center data-loading" src="../../../assets/loadingDots.gif" alt="Loading..." />
+                </td>
+                <ng-container *ngIf="!isDataLoading">
+                    <tr *ngFor="let row of orgDataList">
+                        <td *ngFor="let data of row">{{ data }}</td>
+                    </tr>
+                </ng-container>				
+			</tbody>
+		</table>
+	</div>
+</div>
